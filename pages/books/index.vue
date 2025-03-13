@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 const list = ref([
   {
@@ -17,10 +17,9 @@ const list = ref([
   {
     text: '评论'
   }
-]);
-console.log(list.value);
-const show = ref(true);
+])
+console.log(list.value)
+const show = ref(true)
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

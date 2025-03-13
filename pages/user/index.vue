@@ -1,13 +1,7 @@
 <template>
-	<view>
-		我的
-	</view>
+  <view> 我的 </view>
 </template>
 
-<script>
+<script></script>
 
-</script>
-
-<style>
-
-</style>
+<style></style>

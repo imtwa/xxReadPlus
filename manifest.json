@@ -7,7 +7,6 @@
   "transformPx": false,
   /* 5+App特有相关 */
   "app-plus": {
-    "mergeVirtualHostAttributes": true,
     "usingComponents": true,
     "nvueStyleCompiler": "uni-app",
     "compilerVersion": 3,
@@ -18,7 +17,9 @@
       "delay": 0
     },
     /* 模块配置 */
-    "modules": {},
+    "modules": {
+      "SQLite": {}
+    },
     /* 应用发布信息 */
     "distribute": {
       /* android打包配置 */
@@ -54,6 +55,14 @@
         },
         "ios": {
           "appstore": "static/logo/1024.png"
+        }
+      },
+      "splashscreen": {
+        "androidStyle": "default",
+        "android": {
+          "xxhdpi": "static/logo/1080.png",
+          "xhdpi": "static/logo/1080.png",
+          "hdpi": "static/logo/1080.png"
         }
       }
     }

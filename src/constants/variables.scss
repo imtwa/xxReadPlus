@@ -1,0 +1,187 @@
+$q-font: 'PingFang SC';
+$q-font-bold: 'PingFang SC-Semibold', $q-font;
+$q-font-medium: 'PingFang SC-Medium', $q-font;
+$q-font-regular: 'PingFang SC-Regular', $q-font;
+$q-font-light: 'PingFang SC-Light', $q-font;
+$q-font-bold-number: DINAlternate-Bold;
+$q-font-emoji:
+    apple color emoji,
+    segoe ui emoji,
+    noto color emoji,
+    android emoji,
+    emojisymbols,
+    emojione mozilla,
+    twemoji mozilla,
+    segoe ui symbol,
+    Noto Color Emoji Compat,
+    emoji,
+    sans-serif;
+
+$q-font-base:
+    $q-font,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+
+/* #ifdef WEB */
+$q-font: 'PingFang SC', $q-font-base;
+$q-font-bold: 'PingFang SC-Semibold', $q-font-base;
+$q-font-medium: 'PingFang SC-Medium', $q-font-base;
+$q-font-regular: 'PingFang SC-Regular', $q-font-base;
+$q-font-light: 'PingFang SC-Light', $q-font-base;
+$q-font-bold-number: DINAlternate-Bold, sans-serif-condensed;
+/* #endif */
+
+// 主色
+$q-color-primary: #724ce1;
+// 主色的浅色
+$q-color-primary-thin: #e8e4fd80;
+// 主色的背景色
+$q-color-primary-bg: #b697f6;
+// 大按钮
+$q-btn-bg: linear-gradient(92deg, #aa56ed 0%, #7a4de3 32%, $q-color-primary 100%);
+// 禁用状态的大按钮
+$q-btn-bg-disabled: #d5c9f6;
+// 主要用于私聊按钮的小按钮
+$q-btn-bg-mini: linear-gradient(92deg, #aa56ed 0%, #7a4de3 50%, $q-color-primary 100%);
+// 纯色的按钮
+$q-btn-bg-popup: $q-color-primary;
+
+/* 浅色模式变量 */
+.light {
+    --cure-background: #f2f1f6;
+    --cure-title-color: #2d3548;
+    --cure-content-color: #68738d;
+    --cure-button-background: linear-gradient(92deg, #aa56ed 0%, #7a4de3 32%, #724ce1 100%);
+    --cure-button-color: #ffffff;
+    --cure-item-background: rgba(255, 255, 255, 0.6);
+    --cure-item-border-color: #ffffff;
+    --cure-guide-item-border: 2rpx solid #ffffff;
+    --cure-active-item-background: #e8e4fd;
+    --cure-button-ok-color: #ffffff;
+    --cure-index-background: #f2f1f6;
+    --cure-index-item-border-color: #f2f1f6;
+    --cure-index-item-background: #ffffff;
+    --cure-index-item-color: #2d3548;
+    --cure-index-item-tag-color: #68738d;
+    --cure-index-item-tag-background: rgba(45, 53, 72, 0.05);
+    --cure-detail-item-tag-background: rgba(45, 53, 72, 0.2);
+    --cure-detail-list-time-color: rgba(104, 115, 141, 0.5);
+    --cure-guide-disable-button-background: #d5c9f6;
+    --cure-guide-spinner-inner-color: #e8e4fd;
+    --cure-guide-input-background: #ffffff;
+    --cure-chat-choice-item-background: #ffffff99;
+    --cure-chat-choice-item-border: 2rpx solid #ffffff99;
+    --cure-chat-choice-item-over-background: #e8e4fd;
+    --cure-chat-message-item-background: #f8f9fc;
+    --cure-chat-notime-background: #b697f6;
+    --cure-chat-message-item-color: #333333;
+    --cure-infomation-border-color: #f1f4fa;
+    --cure-purchase-background: #ffffff;
+    --cure-purchase-intro-area-background: #f6f6fe;
+    --cure-morth-user-background: linear-gradient(180deg, #ffe0e1 0%, #fff8f8 100%);
+    --cure-morth-user-color: #79311f;
+    --cure-purchase-title-color: #663eb2;
+    --cure-purchase-item-title-color: #663eb2;
+    --cure-purchase-reault-background: #f0e9fe;
+    --cure-purchase-content-background: #ffffff;
+    --cure-purchase-border-color: #f1f4fa;
+    --cure-purchase-border-morth-current-color: #ff272b;
+    --cure-purchase-border-current-color: #c99378;
+    --cure-purchase-border-morth-current-color: #ff272b;
+    --cure-popcoin-background: #ffffff;
+    --cure-popcoin-fee-background: #f9f9ff;
+    --cure-popcoin-price-color: #68738d;
+    --cure-goods-border-color: #f1f4fa;
+    --cure-pop-background: #ffffff;
+    --cure-hint-color: #68738d;
+    --cure-event-border-color: #e3e6ea;
+    --cure-chat-background: #ffffff;
+    --cure-input-background: #f8f9fc;
+    --cure-chat-draggable-call-background: #4b1bd8cc;
+    --popup-form-background: #ffffff;
+    --cure-purchase-pays-background: #ffffff;
+    --cure-purchase-content-color: #68738d;
+    --cure-purchase-uni-radio-background: #ffffff;
+    --cure-purchase-uni-radio-border: 1px solid #d1d1d1;
+    --cure-coin-goods-background: #ffffff;
+    --cure-price-base-color: rgba(45, 53, 72, 0.5);
+    --cure-feedback-comment-background: #f8f9fc;
+    --cure-voice-info-background: #f9f9ff;
+    --cure-popup-coin-text-title-color: #68738d;
+    --cure-popup-coin-text-comtent-color: #68738d80;
+    --cure-popup-coin-num-color: #69748e;
+}
+
+/* 深色模式变量 */
+.dark {
+    --cure-background: #221d2d;
+    --cure-title-color: #ffffff;
+    --cure-content-color: #dfcbff;
+    --cure-button-background: #ffffff;
+    --cure-button-color: #724ce1;
+    --cure-item-background: rgba(255, 255, 255, 0.05);
+    --cure-item-border-color: rgba(255, 255, 255, 0.05);
+    --cure-guide-item-border: none;
+    --cure-active-item-background: #724ce1;
+    --cure-button-ok-color: #ffffff;
+    --cure-index-background: #1c1826;
+    --cure-index-item-border-color: #221d2d;
+    --cure-index-item-background: #2a2633;
+    --cure-index-item-color: #ffffff;
+    --cure-index-item-tag-color: #aeb6c9;
+    --cure-index-item-tag-background: rgba(255, 255, 255, 0.05);
+    --cure-detail-item-tag-background: rgba(255, 255, 255, 0.2);
+    --cure-detail-list-time-color: rgba(174, 182, 201, 0.5);
+    --cure-guide-disable-button-background: #504076;
+    --cure-guide-spinner-inner-color: #e8e4fd;
+    --cure-guide-input-background: #2d2837;
+    --cure-chat-choice-item-background: rgba(255, 255, 255, 0.05);
+    --cure-chat-choice-item-border: none;
+    --cure-chat-choice-item-over-background: rgba(182, 151, 246, 0.2);
+    --cure-chat-message-item-background: rgba(255, 255, 255, 0.05);
+    --cure-chat-notime-background: rgba(104, 115, 141, 0.1);
+    --cure-chat-message-item-color: #ffffff;
+    --cure-infomation-border-color: rgba(174, 182, 201, 0.1);
+    --cure-purchase-background: #1c1826;
+    --cure-purchase-intro-area-background: #332f3c;
+    --cure-morth-user-background: inear-gradient(180deg, #683637 0%, rgba(104, 54, 55, 0.1) 100%);
+    --cure-morth-user-color: #ffbb83;
+    --cure-purchase-title-color: #b697f6;
+    --cure-purchase-item-title-color: #e8e4fd;
+    --cure-purchase-reault-background: #6e5a93;
+    --cure-purchase-content-background: #4a425e;
+    --cure-purchase-border-color: rgba(241, 244, 250, 0.1);
+    --cure-purchase-border-current-color: #c99378;
+    --cure-purchase-border-morth-current-color: #ff272b;
+    --cure-popcoin-background: #332f3c;
+    --cure-popcoin-fee-background: #4a425e;
+    --cure-popcoin-price-color: #ffffff;
+    --cure-goods-border-color: rgba(241, 244, 250, 0.1);
+    --cure-pop-background: #332f3c;
+    --cure-hint-color: #ffffff;
+    --cure-event-border-color: rgba(174, 182, 201, 0.2);
+    --cure-chat-background: #1c1826;
+    --cure-input-background: rgba(255, 255, 255, 0.05);
+    --cure-chat-draggable-call-background: rgba(122, 76, 255, 0.8);
+    --popup-form-background: #332f3c;
+    --cure-purchase-pays-background: rgba(255, 255, 255, 0.05);
+    --cure-purchase-content-color: #aeb6c9;
+    --cure-purchase-uni-radio-background: rgba(104, 115, 141, 0.1);
+    --cure-purchase-uni-radio-border: 1px solid rgba(104, 115, 141, 0.5);
+    --cure-coin-goods-background: rgba(255, 255, 255, 0.05);
+    --cure-price-base-color: rgba(255, 255, 255, 0.5);
+    --cure-feedback-comment-background: rgba(248, 249, 252, 0.05);
+    --cure-voice-info-background: rgba(74, 66, 94, 0.5);
+    --cure-popup-coin-text-title-color: #aeb6c9;
+    --cure-popup-coin-text-comtent-color: rgba(174, 182, 201, 0.5);
+    --cure-popup-coin-num-color: #aeb6c9;
+}

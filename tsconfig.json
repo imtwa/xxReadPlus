@@ -1,13 +1,27 @@
 {
-    "extends": "@vue/tsconfig/tsconfig.json",
     "compilerOptions": {
+        "target": "esnext",
+        "useDefineForClassFields": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "jsx": "preserve",
         "sourceMap": true,
-        "baseUrl": ".",
-        "paths": {
-            "@/*": ["./src/*"]
-        },
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
         "lib": ["esnext", "dom"],
-        "types": ["@dcloudio/types"]
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "types": ["@dcloudio/types", "@types/node"]
     },
-    "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+    "include": [
+        "node_modules/@types/lodash",
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "src/**/**/*.vue"
+    ]
 }

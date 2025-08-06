@@ -1,5 +1,5 @@
 {
-    "name": "uni-preset-vue",
+    "name": "q-read",
     "version": "0.0.0",
     "scripts": {
         "dev:custom": "uni -p",
@@ -65,7 +65,9 @@
         "@dcloudio/uni-mp-weixin": "3.0.0-4070520250711001",
         "@dcloudio/uni-mp-xhs": "3.0.0-4070520250711001",
         "@dcloudio/uni-quickapp-webview": "3.0.0-4070520250711001",
-        "pinia": "^2.0.36",
+        "cheerio": "^1.1.2",
+        "entities": "^6.0.1",
+        "pinia": "^2.3.1",
         "vue": "^3.5.18",
         "vue-i18n": "^9.14.5"
     },
@@ -80,8 +82,8 @@
         "husky": "^9.1.7",
         "lint-staged": "^16.1.4",
         "prettier": "^3.6.2",
-        "typescript": "^4.9.4",
+        "typescript": "^4.9.5",
         "vite": "5.2.8",
-        "vue-tsc": "^1.0.24"
+        "vue-tsc": "^1.8.27"
     }
 }

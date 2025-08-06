@@ -9,7 +9,11 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useUser } from '@/stores/user';
+import { parser } from '@/utils/parser';
+
 const userStore = useUser();
+
+userStore.title = parser('你好，{{name}}，欢迎来到我的小程序！');
 </script>
 
 <style>
